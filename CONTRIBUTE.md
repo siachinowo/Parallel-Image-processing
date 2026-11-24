@@ -3,14 +3,14 @@
 Welcome! Please follow these steps so we don't break each other's work.
 
 ## Golden rules
-- Never push directly to `main`. It's protected.
+- Never push directly to `master`. It's protected.
 - One feature or fix per branch.
-- Pull the latest `main` before you start new work.
+- Pull the latest `master` before you start new work.
 
 ## Step-by-step
 
 1. **Get the latest code**
-   git checkout main
+   git checkout master
    git pull
 
 2. **Create your own branch** (use your name and a short description)
