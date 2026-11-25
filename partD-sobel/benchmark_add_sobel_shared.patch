@@ -1,0 +1,18 @@
+--- a/src/benchmark.cpp
++++ b/src/benchmark.cpp
+@@ -1,6 +1,7 @@
+ #include "common.h"
+ #include "filters.h"
+ #include "image_io.h"
++#include "sobel.h"      // Part D: gpu_sobel_shared
+ #include <chrono>
+ #include <cmath>
+ #include <cstring>
+@@ -81,6 +82,7 @@
+         {"grayscale", 3, cpu_grayscale, gpu_grayscale},
+         {"blur",      1, cpu_blur,      gpu_blur},
+         {"sobel",     1, cpu_sobel,     gpu_sobel},
++        {"sobel_shared", 1, cpu_sobel,  gpu_sobel_shared},   // Part D: shared-memory tiling
+     };
+ 
+     // ---- CSV ----
